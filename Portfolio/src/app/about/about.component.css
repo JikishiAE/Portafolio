@@ -1,0 +1,39 @@
+.about {
+    background-color: #000;
+    color: #fff;
+    padding: 4rem 0;
+  }
+  
+  .about__img {
+    border-radius: 50%;
+    display: block;
+    height: 250px;
+    margin: 0 auto;
+    width: 250px;
+  }
+  
+  .about__text {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+  
+  .button {
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 2rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .button:hover {
+    background-color: #fff;
+    color: #00bcd4;
+  }

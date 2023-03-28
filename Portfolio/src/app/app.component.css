@@ -1,0 +1,23 @@
+.page-wrapper {
+    background-color: #000;
+    color: #00bcd4;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+.section-title {
+  color: #00bcd4;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}

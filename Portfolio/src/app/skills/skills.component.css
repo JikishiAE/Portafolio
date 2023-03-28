@@ -1,0 +1,35 @@
+.skills {
+    background-color: #fff;
+    color: #000;
+    padding: 4rem 0;
+  }
+  
+  .skill {
+    margin-bottom: 2rem;
+  }
+  
+  .skill__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .skill__progress {
+    background-color: #ddd;
+    border-radius: 2rem;
+    height: 2rem;
+    position: relative;
+  }
+  
+  .progress-bar {
+    background-color: #00bcd4;
+    border-radius: 2rem;
+    height: 2rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.5s ease;
+  }
+  
+  .progress-bar:hover {
+    width: 100%;
+  }
