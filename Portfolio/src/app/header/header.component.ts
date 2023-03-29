@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,9 +6,34 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  isNavActive = false;
+  anchoPantalla: any;
 
-  toggleNav(): void {
-    this.isNavActive = !this.isNavActive;
+  constructor(private el: ElementRef){
+    
+  }
+
+  ngOnInit(){
+    this.anchoPantalla = window.innerWidth;
+  }
+
+  abrirMenu(){
+    const myTag = this.el.nativeElement.querySelector("#menu_movil");
+    const myNav = this.el.nativeElement.querySelector("#linksMenu");
+
+    if(!myTag.classList.contains('active'))
+    {
+      myTag.classList.add('active'); 
+      myNav.classList.add('active'); 
+    }
+    else{
+      myTag.classList.remove('active'); 
+      myNav.classList.remove('active'); 
+    }
+  }
+
+  cerrarMenu(){
+    if(this.anchoPantalla <= 992){
+      this.abrirMenu();
+    }
   }
 }

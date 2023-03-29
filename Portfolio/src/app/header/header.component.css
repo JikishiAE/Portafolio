@@ -1,50 +1,107 @@
-.header {
-    background-color: #ff9900;
-    color: #fff;
-    padding: 2rem 0;
-    position: fixed;
+/* Navbar */
+.site-navbar {
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
+    z-index: 9999;
+    margin-bottom: 0px;
     width: 100%;
+    background: #fff; 
+}
+.site-navbar .site-logo {
+    position: relative;
+    left: 0;
+    top: -5px; 
+}
+.site-navbar .site-navigation .site-menu {
+      margin-bottom: 0; 
+}
+.site-navbar .site-navigation .site-menu .active {
+    color: #613DC1;
+    display: inline-block;
+    padding: 15px 20px; 
+}
+.site-navbar .site-navigation .site-menu a {
+    text-decoration: none !important;
+    display: inline-block; 
+}
+.site-navbar .site-navigation .site-menu > li {
+    display: inline-block; 
+}
+.site-navbar .site-navigation .site-menu > li > a {
+    padding: 15px 20px;
+    color: #000;
+    display: inline-block;
+    text-decoration: none !important; 
+}
+.site-navbar .site-navigation .site-menu > li > a:hover {
+    color: #613DC1; 
+}
+
+
+.sticky-wrapper {
+    position: absolute;
     z-index: 100;
-    transition: all 0.3s ease;
+    width: 100%; 
+}
+.sticky-wrapper .site-navbar {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; 
 }
 
-.header.animate {
-    background-color: #333;
-    transition: all 0.3s ease;
+
+
+.position-relative {
+    position: relative; 
+}
+.text-black {
+    color: #000 !important; 
 }
 
-.header__title {
-    font-size: 3rem;
-    margin: 0;
-    text-align: center;
+@media (min-width: 991.98px) {
+    #menu_movil{
+        display: none;
+    }
 }
-
-.header__nav {
-    margin-top: 1rem;
-    text-align: center;
-}
-
-.header__nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.header__nav ul li {
-    margin: 0 1rem;
-}
-
-.header__nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 1rem;
-    transition: all 0.3s ease;
-}
-
-.header__nav ul li a:hover {
-    background-color: #fff;
-    color: #333;
+@media (max-width: 991.98px) {
+    #caja-menu{
+        justify-content: space-between;
+    }
+    .main-menu.active {
+        display: block !important; 
+    } 
+    .main-menu {
+        display: none; 
+    } 
+    #linksMenu > nav > ul{
+        -webkit-transition: 3s height ease;
+        -o-transition: 3s height ease;
+        transition: 3s height ease; 
+        height: 0%;
+    }
+    #linksMenu.active > nav > ul{
+        position: fixed;
+        /* top: 80px; */
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    nav ul li a{
+        font-size: 1.5em;
+        padding: 5px 15px;
+    }
+    .site-navbar .site-navigation .site-menu > li > a {
+        color: white;
+    }
+    .toggle{
+        text-align-last: end;
+        cursor: pointer;
+        background: #fff;
+    }
 }

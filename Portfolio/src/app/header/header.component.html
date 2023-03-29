@@ -1,13 +1,38 @@
-<header class="header">
+<header class="site-navbar py-4 js-sticky-header site-navbar-target">
+
     <div class="container">
-        <h1 class="header__title">Mi portafolio</h1>
-        <nav class="header__nav">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de mí</a></li>
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Contacto</a></li>
+      <div id="caja-menu" class="row align-items-center">
+        
+        <div class="col-6 col-md-3 col-xl-4  d-block">
+          <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">Portafolio<span class="text-primary">.</span> </a></h1>
+        </div>
+
+        <div id="menu_movil" class="toggle col-6 col-md-3 col-xl-4" (click)="abrirMenu()">
+          <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+        </div>
+
+        <div id="linksMenu" class="col-12 col-md-9 col-xl-8 main-menu">
+          <nav class="site-navigation position-relative text-right">
+
+            <ul id="ulAnimate" class="site-menu main-menu js-clone-nav mr-auto d-lg-block ml-0 pl-0">
+              <li><a href="#home-section" class="nav-link" (click)="cerrarMenu()">Inicio</a></li>
+              <li><a href="#features-section" class="nav-link" (click)="cerrarMenu()">Precios</a></li>
+              <li > <!-- class="has-children" -->
+                <a href="#about-section" class="nav-link" (click)="cerrarMenu()">Sobre Nosotros</a>
+                <!-- <ul class="dropdown arrow-top">
+                  <li><a href="#" target="_blank" class="nav-link"><span class="text-primary">More Free Templates</span></a></li>
+                  <li><a href="#our-team-section" class="nav-link">Our Team</a></li>
+                </ul> -->
+              </li>
+              <li><a href="#contact-section" class="nav-link" (click)="cerrarMenu()">Contacto</a></li>
             </ul>
-        </nav>
+          </nav>
+        </div>
+
+
+        <div class="col-6 col-md-9 d-inline-block d-lg-none ml-md-0" ><a href="#" class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a></div>
+
+      </div>
     </div>
+    
 </header>
