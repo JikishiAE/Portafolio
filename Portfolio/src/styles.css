@@ -2,3 +2,37 @@
 body{
     margin: 0;
 }
+
+.site-section {
+    padding: 2.5em 0; }
+    @media (min-width: 768px) {
+      .site-section {
+        padding: 5em 0; } }
+    .site-section.site-section-sm {
+      padding: 4em 0; }
+  
+  .site-section-heading {
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    position: relative;
+    font-size: 2.5rem; }
+    @media (min-width: 768px) {
+      .site-section-heading {
+        font-size: 3rem; } }
+  
+        .site-section2 {
+          padding-top: 2.5em; }
+          @media (min-width: 768px) {
+            .site-section2 {
+              padding-top: 5em; } }
+          .site-section2.site-section2-sm {
+            padding-top: 4em; }
+        
+        .site-section2-heading {
+          padding-bottom: 20px;
+          margin-bottom: 0px;
+          position: relative;
+          font-size: 2.5rem; }
+          @media (min-width: 768px) {
+            .site-section2-heading {
+              font-size: 3rem; } }
